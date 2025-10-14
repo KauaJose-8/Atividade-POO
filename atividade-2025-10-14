@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+
+
+/*
+ //Questão 1
+ 
+int main(){
+	int idade;
+	 
+	cout << "informe sua idade: " << endl;
+	cin >> idade;
+	 
+	if(idade <= 17){
+		cout << "sai daqui mane!" << endl;
+	}
+	 
+	 if(idade >= 18){
+		 cout << "entra na festa mofi" << endl;
+	}
+	 
+}
+*/
+
+/*
+//Questão 2
+
+int main(){
+	int contagem = 10;
+	
+	while(contagem != 0){
+		cout << "contagem regressiva: " << contagem <<endl;
+		contagem--;
+	}
+}
+*/
+
+/*
+//Questão 3
+
+int main(){
+	int num;
+	int sum;
+	
+	while(true){
+		cout << "coloque numeros para somar" << endl;
+		cout << "digite '0' para sair" << endl;
+		cin >> num;
+		
+		if(num == 0)
+			break;
+		
+		sum += num;
+	}
+	
+	cout << "o resultado das somas é: " << sum << endl;
+	
+	return 0;
+}
+*/
+
+
+//Questão 4
