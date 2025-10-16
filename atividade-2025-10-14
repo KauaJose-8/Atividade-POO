@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -60,5 +62,112 @@ int main(){
 }
 */
 
-
+/*
 //Questão 4
+
+int main(){
+	int num;
+	int res;
+	
+	cout << "digite um numero para saber sua tabuada: ";
+	cin >> num;
+	
+	for(int i = 1; i < 11; i++){
+		res = num * i;
+		
+		cout << num << " X " << i << " = " << res <<endl;
+	}
+}
+*/
+
+/*
+//Questão 5
+
+int main(){
+	int pos;
+	int num;
+	
+	cout << "digite 10 numeros e o codigo te mostrara os que são positivos" << endl;
+	
+	for(int i = 0; i < 10; i++){
+		cout << "digite um numero: ";
+		cin >> num;
+		
+		if(num < 0){
+			pos++;
+		}
+	}
+	
+	cout << "Voce digitou " << pos << " numeros positivos";
+}
+*/
+
+/*
+//Questão 6
+
+int main(){
+	float nota;
+	float soma_notas;
+	float media;
+	int quantidade_nota;
+	
+	while(true){
+		cout << "digite sua nota: ";
+		cin >> nota;
+		
+		if(nota > 0){
+			soma_notas += nota;
+			quantidade_nota++;
+		}
+		
+		if(nota < 0){
+			break;
+		}
+	}
+	
+	media = soma_notas / quantidade_nota;
+	cout << "Á sua media é: " << media;
+}
+*/
+
+/*
+//Questão 7
+int main(){
+	
+	for(int i = 1; i < 51; i++){
+		if(i % 2 == 0){
+			cout << "o numero " << i << " é par" << endl;
+		}
+	}
+}
+*/
+
+/*
+//Questão 8
+
+int main(){
+	srand(time(0));
+	
+	int num_aleatorio = rand() % 10 + 1;
+	int num;
+	
+	while(true){
+		cout << "digite um numero de 1 a 10, se acertar o numero aleatoria voce ganha!: " << endl;
+		cin >> num;
+		
+		if(num < num_aleatorio){
+			cout << "um pouco mais alto mano!" << endl;
+		}
+		
+		if(num > num_aleatorio){
+			cout << "mais baixo mano" << endl;
+		}
+		
+		if(num == num_aleatorio){
+			break;
+		}
+	}
+	
+	cout << "parabens voce ganhou o numero aleatoria era! " << num_aleatorio;
+}
+*/
