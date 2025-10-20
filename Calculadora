@@ -1,0 +1,103 @@
+#include <iostream> 
+
+/*
+ * Lista Operadores
+ * Soma: +
+ * Subtração: -
+ * Divisão: /
+ * Multiplicação: *
+ * Resto da Divisão: %
+ */
+ 
+ /*
+  * Laços de repetição
+  * for
+  * for (inicialização, condição, atualização)
+  * while
+  * do while
+  */
+  
+int soma(int n, int n2);
+int subtracao(int n, int n2);
+int divisao(int n, int n2);
+int multiplicacao(int n, int n2);
+int resto(int n, int n2);
+
+int main(){
+	int n, n2;
+	
+	while(true){
+		
+		char operacao;
+		std::cout << "escolha uma das seguintes operações:'+', '-', '/', '*' e '%': ";
+		std::cin >> operacao;
+		std::cout << "Digite um numero: ";
+		std::cin >> n;
+		
+		std::cout << "Digite um segundo numero: ";
+		std::cin >> n2;
+		
+		std::cout << "O valores digitados foram: " << n << " e " << n2 << std::endl;
+		
+		if(operacao == '+'){
+			std::cout << "Resultado da Soma: " << soma(n,n2) << std::endl;	
+			}
+		
+		if(operacao == '-'){
+			std::cout << "Resultado da Subtração: " << subtracao(n, n2) << std::endl;
+			}
+		
+		if(operacao == '/'){
+			std::cout << "Resultado da Divisão: " << divisao(n, n2) << std::endl;
+			}
+		
+		if(operacao == '*'){
+			std::cout << "Resultado da Multiplicação: " << multiplicacao(n, n2) << std::endl;
+			}
+		
+		if(operacao == '%'){
+			std::cout << "Resultado do resto da Divisão: " << resto(n, n2) << std::endl;
+			}
+		
+		char continuar;
+		std::cout << "Deseja fazer outra operação?" << std::endl;
+		std::cout << "digite s/n: ";
+		std::cin >> continuar;
+		
+		if(continuar == 'n'){
+			std::cout <<"Bye!" << std::endl;
+			break;
+			}
+		
+		if(continuar == 's'){
+			std::cout <<"blz!" << std::endl;
+			}
+	}
+		
+	
+	
+}
+int soma(int n, int n2){
+	int r = n + n2;
+	return r;
+} 
+
+int subtracao(int n, int n2){
+	int r_sub = n - n2;
+	return r_sub;
+} 
+
+int divisao(int n, int n2){
+	int r_div = n / n2;
+	return r_div;
+} 
+
+int multiplicacao(int n, int n2){
+	int r_mlt = n * n2;
+	return r_mlt;
+} 
+
+int resto(int n, int n2){
+	int r_rest = n % n2;
+	return r_rest;
+} 
