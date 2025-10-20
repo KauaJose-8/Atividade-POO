@@ -8,6 +8,50 @@ using namespace std;
 //Questão 1
 
 int main(){
+	
+	int numeros[5];
+	
+	cout << "digita 5 numeros mano." << endl;
+	
+	for(int i = 1; i < 6; i++){
+		cout << "digite um numero: " << endl;
+		cin >> numeros[i];
+	}
+	
+	cout << "esses são seus numeros digitados: " << endl;
+	for(int i=1; i < 6; i++){
+		cout << numeros[i] << " ";
+	}
+}
+*/
+
+/*
+//Questão 2
+
+int main(){
+	
+	int num_p[11];
+	
+	cout << "digite 10 numeros, e mostraremos mapenas os pares" << endl;
+	
+	for(int i = 1; i < 11; i++){
+		cout << "digite um numero: " << endl;
+		cin >> num_p[i];
+	}
+	
+	cout << "esses são seus numeros pares: " << endl;
+	for(int i=1; i < 11; i++){
+		if(num_p[i] % 2 == 0){
+			cout << num_p[i] << " ";
+		}
+	}
+}
+*/
+
+/*
+//Questão 3
+
+int main(){
 	float notas[8];
 	float soma = 0.0;
 	cout << "digite todas as suas 8 notas para saber sua media: " << endl;
@@ -31,5 +75,69 @@ int main(){
 	if(media <= 6.99){
 		cout << "bora tentar mais mano, não passou.";
 	}
+}
+*/
+
+/*
+//Questão 4
+
+int main(){
+	
+	int num_p[7];
+	
+	int menor;
+	int maior;
+	cout << "digite 6 numeros" << endl;
+	
+	for(int i = 0; i < 6; i++){
+		cout << "digite um numero: " << endl;
+		cin >> num_p[i];
+	}
+	
+	menor = maior = num_p[0];
+	
+	for(int i = 0; i < 6; i++){
+		if(num_p[i] < menor){
+		menor = num_p[i];
+		}
+		
+		if(num_p[i] > maior){
+		maior = num_p[i];
+		}
+	}
+			
+	cout << "o maior numero é: " << maior << endl;
+	cout << "o menor numero é: " << menor;
+	
+}
+*/
+
+/*
+//Questão 5
+int main(){
+	
+	int num_p[9];
+	
+	int positivo = 0;
+	int negativo = 0;
+	cout << "digite 8 numeros e diremos quantos são positivos e negativos" << endl;
+	cout << "o numero 0, sera considerado neutro" << endl;
+	for(int i = 0; i < 8; i++){
+		cout << "digite um numero: " << endl;
+		cin >> num_p[i];
+	}
+	
+	for(int i = 0; i < 8; i++){
+		if(num_p[i] > 0){
+		positivo++;
+		}
+		if(num_p[i] < 0){
+		negativo++;
+		}
+	}
+			
+	cout << "voce digitou[" << positivo << "]numeros positivos"<< endl;
+	cout << "voce digitou[" << negativo << "]numeros negativos";
+	
 }
 */
