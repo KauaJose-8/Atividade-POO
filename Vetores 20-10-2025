@@ -1,0 +1,35 @@
+#include <iostream> 
+
+using namespace std;
+
+//Vetores 20-10-2025
+
+/*
+//Questão 1
+
+int main(){
+	float notas[8];
+	float soma = 0.0;
+	cout << "digite todas as suas 8 notas para saber sua media: " << endl;
+	
+	for(int i = 1; i < 9; i++){
+		cout << "digite a nota " << i << ": " << endl;
+		cin >> notas[i];
+		
+		soma += notas[i];
+		}
+		
+		
+	float media = soma / 8;
+	
+	cout << "A média da suas notas é: " << media << endl;
+	
+	if(media >= 7){
+		cout << "parabens, voce passou!";
+	}
+	
+	if(media <= 6.99){
+		cout << "bora tentar mais mano, não passou.";
+	}
+}
+*/
