@@ -1,0 +1,33 @@
+#include <iostream> 
+#include <string>
+
+
+class Animal{
+	public:
+	std::string especie;
+	std::string classe;
+	std::string dieta;
+	int num_patas;
+	float peso;
+};
+
+int main(){
+	Animal Cachorro;
+	
+	Cachorro.especie  = "Vira-Lata";
+	Cachorro.classe = "Mamífero";
+	Cachorro.dieta =  "ónivoro";
+	Cachorro.num_patas = 4;
+	Cachorro.peso = 20.4;	
+	
+	Cachorro.especie  = "Pastor Alemão";
+	Cachorro.classe = "Mamífero";
+	Cachorro.dieta =  "ónivoro";
+	Cachorro.num_patas = 4;
+	Cachorro.peso = 19.7;	
+	
+	std::cout << "o peso do cachorro é: " << Cachorro.peso << " KG" << std::endl;
+
+}
+
+
