@@ -1,3 +1,6 @@
+#include <iostream>
+#include <vector>
+
 int main(){
     std::vector<int> numeros(6);
 
