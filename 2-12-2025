@@ -1,1 +1,145 @@
+/*
+Q.1 O que é um vector c++? Explique com suas palavras.
+r: é uma lista de varios valores do mesmo tipo (int, float, double e etc),
+que são organizados em sequencia e acessados por um indice que começa a partir do 0.
 
+Q.2 qual a diferença entre declarar um valor fixo e inicializa-lo com
+valores especificos?
+r: quando voçê declara um valor fixo tipo: int vector[5]; o espaço reservado esta lá,
+mas ele não est preenchido, ja com valores especifico voce determina o dados que vai
+estar dentro do vector: int vector = 1, 2, 3, 4, 5};
+
+Q.3 Explique o que significa índice e qual o intervalo válido para um vetor int notas[10]
+
+o indice é o que indica a posição de cada elemento detro de um vetor e ele começa em 0,
+no indice: int nota[10] temos os indices:0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+*/
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+/* Q.4 e Q.5 
+
+
+int main(){
+    std::vector<int> numeros(6);
+    int soma = 0;
+
+    std::cout << "Digite 5 numeros: " << std::endl;
+
+    for(int i = 0; i < 5; i++) {
+        std::cin >> numeros[i];
+        soma += numeros[i];
+    }
+
+    
+    for(int i = 0; i < 5; i++) {
+        std::cout << numeros[i] << "" << std::endl;
+    }
+
+
+    float media = soma / 5.0;
+
+    std::cout << "Soma Total: " << soma << std::endl;
+    std::cout << "Media Aritmetica: " << media << std::endl;
+
+    return 0;
+}
+*/
+
+/*Q.6 
+int main() {
+    std::vector<int> nums(8);
+
+    std::cout << "Digite 8 numeros:\n";
+    for (int i = 0; i < 8; i++) {
+        std::cin >> nums[i];
+    }
+
+    int maior = nums[0], posMaior = 0;
+    int menor = nums[0], posMenor = 0;
+
+    for (int i = 1; i < 8; i++) {
+        if (nums[i] > maior) {
+            maior = nums[i];
+            posMaior = i;
+        }
+        if (nums[i] < menor) {
+            menor = nums[i];
+            posMenor = i;
+        }
+    }
+
+    std::cout << "\nMaior valor: " << maior << " na posicao " << posMaior;
+    std::cout << "\nMenor valor: " << menor << " na posicao " << posMenor;
+
+    return 0;
+}
+*/
+
+/* Q.7 
+int main() {
+    std::vector<int> valor_x(10);
+
+    std::cout << "Digite 10 numeros: " << std::endl;
+    for (int i = 0; i < 10; i++) {
+        std::cin >> valor_x[i];
+    }
+
+    int x;
+    std::cout << "\nDigite o numero X que deseja procurar: ";
+    std::cin >> x;
+
+    bool procura = false;
+    int pos = -1;
+
+    for (int i = 0; i < 10; i++) {
+        if (valor_x[i] == x) {
+            procura = true;
+            pos = i;
+            break;
+        }
+    }
+
+    if (procura) {
+        std::cout << "\nX existe no vetor, posicao: " << pos;
+    } else {
+        std::cout << "\nX NAO existe no vetor, mano!.";
+    }
+
+    return 0;
+}
+*/
+
+/* Q.8 
+int main() {
+    std::vector<std::string> nomes(6);
+
+    std::cout << "Digita 6 nomes:\n";
+    for (int i = 0; i < 6; i++) {
+        std::cin >> nomes[i];
+    }
+
+    std::string busca;
+    std::cout << "\nDigite um nome pra buscar ai: ";
+    std::cin >> busca;
+
+    bool existe = false;
+
+    for (int i = 0; i < 6; i++) {
+        if (nomes[i] == busca) {
+            existe = true;
+            break;
+        }
+    }
+
+    if (existe) {
+        std::cout << "\nO nome existe no vetor! mano!";
+    } else {
+        std::cout << "\nO nome NAO existe no vetor! mano!";
+    }
+
+    return 0;
+}
+*/
